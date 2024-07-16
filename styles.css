@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .container-custom {
+    background-color: #1e1e1e;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 3rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.dark-mode header h1 {
+    color: #f0f0f0;
+}
+
+header p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.dark-mode header p {
+    color: #bbb;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.dark-mode nav ul li a {
+    color: #f0f0f0;
+}
+
+nav ul li a:hover {
+    color: #f44336;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode section {
+    background-color: #2e2e2e;
+}
+
+section:hover {
+    transform: translateY(-10px);
+}
+
+section h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.dark-mode section h2 {
+    color: #f0f0f0;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+    border: 5px solid #f44336;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: rotate(360deg);
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-list li span {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.dark-mode .skills-list li span {
+    color: #f0f0f0;
+}
+
+.progress-bar-custom {
+    width: 100%;
+    height: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dark-mode .progress-bar-custom {
+    background-color: #3e3e3e;
+}
+
+.progress-bar-custom span {
+    display: block;
+    height: 100%;
+    background-color: #f44336;
+    transition: width 0.8s ease;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.project-gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-gallery img:hover {
+    transform: translateY(-10px);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .contact-form {
+    background-color: #2e2e2e;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dark-mode .contact-form label {
+    color: #f0f0f0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+    background-color: #3e3e3e;
+    color: #f0f0f0;
+    border: 1px solid #666;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.dark-mode footer {
+    background-color: #121212;
+    color: #bbb;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animation for div elements */
+div {
+    animation: example 5s linear 2s infinite alternate;
+}
+
+@keyframes example {
+    0% { background-color: #fff; }
+    100% { background-color: #f44336; }
+}
+
+/* Toggle Button Style */
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #333;
+}
